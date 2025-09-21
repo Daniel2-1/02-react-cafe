@@ -12,6 +12,7 @@ export default function App() {
     neutral: 0,
     bad: 0,
   });
+    
 
   function handleVote(type: VoteType) {
     setVotes((votes) => ({ ...votes, [type]: votes[type] + 1 }));
